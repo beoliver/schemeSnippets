@@ -1,3 +1,5 @@
+
+
 (define (applicative proc)
   (define (loop state)
     (lambda xs
@@ -5,6 +7,7 @@
         (apply proc state)
         (loop (append xs state)))))
   (loop '()))
+
 
 44> applicative
 #{procedure 9090 applicative}
