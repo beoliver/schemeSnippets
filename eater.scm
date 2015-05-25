@@ -17,3 +17,4 @@
 41> (((eater 1) 2) 3)
 #{procedure 9013 (eat in state-loop in eater)}
 41> ((((eater 1) 2) 3) 'vomit)
+(1 2 3)
