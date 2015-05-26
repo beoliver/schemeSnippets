@@ -17,7 +17,7 @@
 
 (define-syntax lambda*
   (syntax-rules ()
-    ((fun params body)
+    ((_ params body)
       (if (symbol? `params)
         (applicative (lambda params body))
         (curry (length `params) (lambda params body))))))
